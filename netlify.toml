@@ -1,0 +1,11 @@
+# no build — static + functions only
+[build]
+  functions = "netlify/functions"
+[[redirects]]
+  from = "/enrich"
+  to = "/.netlify/functions/enrich"
+  status = 200
+[[redirects]]
+  from = "/api/enrich"
+  to = "/.netlify/functions/enrich"
+  status = 200
